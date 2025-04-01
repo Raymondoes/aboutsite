@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact me with this HTML page!" />
+    <meta name="title" content="Raymondoes: Contact" />
+    <link rel="icon shortcut" type="x-icon" href="content/fire.avif" />
+    <link rel="stylesheet" href="./css/output.css">
+  </head>
+
+  <body class="bg-gradient-to-r from-gray-950 via-black to-gray-950 text-white min-h-screen">
+    <main class="flex flex-col items-center justify-center min-h-screen px-4 py-8">
+      <!-- Heading -->
+      <div class="text-center mb-8">
+        <h1
+          class="relative text-3xl md:text-6xl font-bold 
+                 text-sky-400 drop-shadow-[0px_0px_26px]"
+        >
+          Contact Me
+        </h1>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="w-full max-w-md mx-auto flex flex-col space-y-4" action="https://formsubmit.co/marioboygamingyt@gmail.com" method="POST">
+        <!-- Email Input -->
+        <input
+          type="email"
+          name="Email"
+          placeholder="example@gmail.com"
+          required
+          class="w-full text-center rounded py-2 px-3 
+                 border-b-2 border-purple-700 focus:border-purple-500 
+                 outline-none transition-colors"
+        />
+
+        <!-- Reason Select -->
+        <select
+          name="Reason"
+          required
+          class="w-full text-center rounded py-2 px-3 
+                 border-2 border-blue-800 bg-gray-950 
+                 focus:outline-none focus:border-teal-400 
+                 transition-colors"
+        >
+          <option value="" disabled selected>Select a Reason</option>
+          <option value="Contacting">Just Contacting</option>
+          <option value="Hiring">Hiring</option>
+          <option value="Debugging">Debugging</option>
+        </select>
+
+        <!-- Message Textarea -->
+        <textarea
+          name="Message"
+          required
+          placeholder="Enter your Message"
+          class="w-full p-2.5 rounded-lg 
+                 border border-purple-900 
+                 focus:ring-blue-500 focus:border-blue-500 
+                 outline-none transition-colors"
+          rows="4"
+        ></textarea>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="mx-auto w-32 h-12 rounded-full 
+                 border-4 border-blue-700 
+                 hover:border-blue-300 active:border-blue-600 
+                 font-semibold transition-colors"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <!-- Your custom JS if needed -->
+    <script src="src/main.js"></script>
+  </body>
+</html>
